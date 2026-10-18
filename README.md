@@ -1,4 +1,4 @@
-# SLED experiment artifact
+# SLED: Efficient Polygon-to-Grid Visualization for Spatial Data Exploration
 
 
 This repository is the implementation of our research paper "SLED: Efficient Polygon-to-Grid Visualization for Spatial Data Exploration". 
