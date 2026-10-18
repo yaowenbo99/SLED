@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "defaults": {
+    "dataset": "april_internal_fixture",
+    "records": "april_internal_records.jsonl",
+    "bbox": [0, 0, 2, 2],
+    "resolution": "2x2",
+    "out_dir": "../../build/config-results",
+    "threads": 1,
+    "batch_rows": 1,
+    "dataset_ratio": 100,
+    "execution_mode": "streaming",
+    "ri_resolution": "8x8",
+    "no_progress": true
+  },
+  "runs": [
+    {
+      "run_name": "config_spatial",
+      "method": "spatial_join"
+    },
+    {
+      "run_name": "config_scan_sled",
+      "method": "scan,SLED",
+      "execution_mode": "materialized",
+      "compare": true
+    },
+    {
+      "run_name": "config_all",
+      "method": "all",
+      "compare": true
+    }
+  ]
+}

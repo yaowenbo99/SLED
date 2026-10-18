@@ -1,0 +1,4 @@
+{
+  "schema_version": 2,
+  "runs": [{"run_name": "invalid_schema"}]
+}

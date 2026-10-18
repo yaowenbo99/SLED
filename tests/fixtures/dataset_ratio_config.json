@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "defaults": {
+    "dataset": "dataset_ratio_fixture",
+    "records": "dataset_ratio_records.jsonl",
+    "resolution": "2x2",
+    "out_dir": "../../build/config-results",
+    "threads": 1,
+    "batch_rows": 1,
+    "execution_mode": "streaming",
+    "no_progress": true,
+    "dataset_ratio": 40
+  },
+  "runs": [
+    {
+      "run_name": "config_ratio",
+      "method": "spatial_join"
+    }
+  ]
+}

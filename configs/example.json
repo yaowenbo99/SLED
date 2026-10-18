@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "defaults": {
+    "dataset": "synthetic",
+    "records": "../tests/fixtures/sled_interactive_geometry_records.jsonl",
+    "resolution": "8x8",
+    "ri_resolution": "8x8",
+    "out_dir": "../results/example",
+    "threads": 1,
+    "no_progress": true
+  },
+  "runs": [
+    {
+      "run_name": "sled",
+      "method": "SLED"
+    },
+    {
+      "run_name": "comparison",
+      "method": "all",
+      "compare": true
+    }
+  ]
+}

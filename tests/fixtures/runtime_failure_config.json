@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "defaults": {
+    "dataset": "april_internal_fixture",
+    "bbox": [0, 0, 2, 2],
+    "resolution": "2x2",
+    "method": "spatial_join",
+    "out_dir": "../../build/config-failure-results",
+    "no_progress": true
+  },
+  "runs": [
+    {
+      "run_name": "config_expected_failure",
+      "records": "missing_records.jsonl"
+    },
+    {
+      "run_name": "config_after_failure",
+      "records": "april_internal_records.jsonl"
+    }
+  ]
+}

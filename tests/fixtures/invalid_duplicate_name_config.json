@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {"run_name": "duplicate name"},
+    {"run_name": "duplicate/name"}
+  ]
+}
